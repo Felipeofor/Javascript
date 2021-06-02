@@ -37,6 +37,7 @@ body::before {
 #texto1 { 
     padding-top:2em;
     font-size: 1.4em;
+    text-align: center;
 }
 
 
@@ -57,6 +58,9 @@ body::before {
     padding-top: 6em;
 }
 
+#inicio h1{
+  text-align: center;
+}
 
 #datos {
   font-family: "Montserrat", sans-serif;
@@ -136,11 +140,21 @@ body::before {
    }
 
 #imagen2 {
-  width: 100%;
+  width: 60%;
   display: block;
   margin-bottom: 4em;
 }
 
+@media (min-width: 1px) and (max-width: 991.98px) { 
+  #imagen2{
+    width: 90%;
+  }
+}
+
+.imagen_quienesSomos{
+  display: flex;
+  justify-content: center;
+}
 
 p {
   font-family: "Montserrat", sans-serif;
@@ -151,6 +165,8 @@ p {
 /* Formulario */
 
 #formulario {
+  position: relative;
+  width: auto;
   background: var(--color-darkblue-alpha);
   padding: 2.5rem 2rem;
   border-radius: 100px;
@@ -186,8 +202,14 @@ p {
 
 .vehiculo{
   padding-top: 1rem;
+  padding: 0.5em;
+  border-radius: 0.5em;
 }
 
+select{
+  padding: 0.5em;
+  border-radius: 0.5em;
+}
 
 #submit{
   background-color: #495057;
@@ -215,6 +237,20 @@ p {
 .table {
   background-color: #b1a7a6;
   border-radius: 100px;
+  border-style: none;
+}
+@media (min-width: 1px) and (max-width: 991.98px) { 
+  .table{
+    border-radius: 0;
+  }
+}
+
+
+.table th{
+  border-style: none;
+}
+
+.table td{
   border-style: none;
 }
 
@@ -259,6 +295,7 @@ p {
 }
 
 ul {
+  width: auto;
   list-style-type: none;
   margin: 0;
   padding-top: 0;
@@ -266,6 +303,12 @@ ul {
   background-color: #333333;
   text-align: center;
   border-radius: none;
+}
+
+#footer__p {
+  padding: 1em 0 1em 0;
+  justify-content: center;
+  text-align: center;
 }
 
 li {
