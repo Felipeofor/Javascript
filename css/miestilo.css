@@ -234,6 +234,13 @@ select{
   
 }
 
+@media (min-width: 1px) and (max-width: 991.98px) { 
+  #formulario {
+    border-radius: 0px;
+  }
+}
+
+
 /*Solicitar Servicio*/
 
 #solicitud {
